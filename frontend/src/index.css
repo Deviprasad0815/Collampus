@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(20, 20, 20);
+    font-family: 'Poppins', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+.hero__page{
+    background:
+    linear-gradient(
+          rgba(0, 0, 0, 0.8), 
+          rgba(0, 0, 0, 0.8)
+        ),
+    url(../public/grid.png), url(../public/smoke.png) no-repeat;
+    background-color: #181818;
+    background-size: cover;
+    
+}
+.sendButton {
+  background-image: url(../public/send.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-us{
+    background: url(../public/aboutus.png) no-repeat;
+    background-color: #181818;
+    background-size: cover;
+}
+
+.font_urbanist{
+    font-family: "Urbanist", sans-serif;
+}
+
+
+.my_shadow{
+    filter: drop-shadow(4px 4px 47.7px rgba(249, 249, 249, 0.15));
+}
+
+.queries{
+  background: url(../public/queriesbg.png) no-repeat;
+    background-color: #181818;
+    background-size: cover;
+}
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-infinite {
+    animation: rotate infinite 4s linear;
+  }
+  
+  
+  .rotate-infiniteslow {
+    animation: rotate infinite 80s linear;
+  }
+  
+  .rotate180 {
+    transform: rotate(180deg);
+  }
+  
+  .rotate0 {
+    transform: rotate(0deg);
+  }
+  
+  .transition-transform {
+    transition: transform 0.5s ease;
+  }
+  
+  .transition-max-height {
+    transition: max-height 0.5s ease-linear;
+  }
+  
+  .max-h-0 {
+    max-height: 0;
+  }
+  
+  .max-h-96 {
+    max-height: 24rem; /* Adjust this value based on your content size */
+  }
+  *{
+    -webkit-tap-highlight-color: transparent;
+}
